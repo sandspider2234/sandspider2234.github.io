@@ -2,47 +2,59 @@
 <html lang="en">
 <head>
   
-    <title>Narnia Writeup :: Terminal — A simple, retro theme for Hugo</title>
+    <title>Narnia Writeup :: bnice — A blog for cyber stuff</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="Narnia Writeup Very cool, wow" />
-<meta name="keywords" content=", " />
+<meta name="description" content="Intro So, I&amp;rsquo;ve decided to try doing the Narnia wargame, and document my attempts. Let&amp;rsquo;s get started!
+BUT FIRST - SPOILER WARNING! Do not read this writeup if you plan to solve Narnia yourself!
+Narnia0 &amp;ndash;&amp;gt; Narnia1 First, we log in:
+ssh -p 2226 narnia0@narnia.labs.overthewire.org With the password narnia0.
+We know that the data for the levels is in /narnia, so:
+ls -la /narnia  Let&amp;rsquo;s read narnia0.c!
+From a quick glimpse, we can deduce that the program reads 24 bytes from stdin into a 20 byte buffer." />
+<meta name="keywords" content="narnia, unix" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="/posts/narnia-writeup/" />
+<link rel="canonical" href="https://www.bnice.xyz/posts/narnia-writeup/" />
 
 
 
 
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="https://www.bnice.xyz/assets/style.css">
 
-  <link rel="stylesheet" href="/assets/red.css">
-
-
+  <link rel="stylesheet" href="https://www.bnice.xyz/assets/red.css">
 
 
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
 
-  <link rel="shortcut icon" href="/img/favicon/red.png">
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.bnice.xyz/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://www.bnice.xyz/img/favicon/red.png">
 
 
 
 <meta name="twitter:card" content="summary" />
 
-  <meta name="twitter:site" content="" />
+  <meta name="twitter:site" content="sandspider2234" />
 
 <meta name="twitter:creator" content="sandspider2234" />
 
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Narnia Writeup :: Terminal">
-<meta property="og:description" content="Narnia Writeup Very cool, wow" />
-<meta property="og:url" content="/posts/narnia-writeup/" />
+<meta property="og:title" content="Narnia Writeup :: bnice">
+<meta property="og:description" content="Intro So, I&amp;rsquo;ve decided to try doing the Narnia wargame, and document my attempts. Let&amp;rsquo;s get started!
+BUT FIRST - SPOILER WARNING! Do not read this writeup if you plan to solve Narnia yourself!
+Narnia0 &amp;ndash;&amp;gt; Narnia1 First, we log in:
+ssh -p 2226 narnia0@narnia.labs.overthewire.org With the password narnia0.
+We know that the data for the levels is in /narnia, so:
+ls -la /narnia  Let&amp;rsquo;s read narnia0.c!
+From a quick glimpse, we can deduce that the program reads 24 bytes from stdin into a 20 byte buffer." />
+<meta property="og:url" content="https://www.bnice.xyz/posts/narnia-writeup/" />
 <meta property="og:site_name" content="Narnia Writeup" />
-<meta property="og:image" content="/">
+<meta property="og:image" content="https://www.bnice.xyz/img/narnia/narnia.webp">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
@@ -71,7 +83,7 @@
     <div class="header__logo">
       <a href="/">
   <div class="logo">
-    Terminal
+    Barak Nehmad
   </div>
 </a>
 
@@ -119,7 +131,7 @@
     
 <div class="post">
   <h1 class="post-title">
-    <a href="/posts/narnia-writeup/">Narnia Writeup</a></h1>
+    <a href="https://www.bnice.xyz/posts/narnia-writeup/">Narnia Writeup</a></h1>
   <div class="post-meta">
       
     <span class="post-date">
@@ -136,18 +148,255 @@
   
   <span class="post-tags">
     
-    #<a href="/tags/"></a>&nbsp;
+    #<a href="https://www.bnice.xyz/tags/writeup/">writeup</a>&nbsp;
     
-    #<a href="/tags/"></a>&nbsp;
+    #<a href="https://www.bnice.xyz/tags/narnia/">narnia</a>&nbsp;
+    
+    #<a href="https://www.bnice.xyz/tags/unix/">unix</a>&nbsp;
     
   </span>
   
 
   
+  <img src="https://www.bnice.xyz/img/narnia/narnia.webp" class="post-cover" />
+  
 
   <div class="post-content"><div>
-        <h2 id="narnia-writeup">Narnia Writeup<a href="#narnia-writeup" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p><em>Very cool, wow</em></p>
+        <h1 id="intro">Intro<a href="#intro" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>So, I&rsquo;ve decided to try doing the <a href="https://overthewire.org/wargames/narnia/">Narnia wargame</a>, and document my attempts. Let&rsquo;s get started!</p>
+<h1 id="but-first---spoiler-warning">BUT FIRST - SPOILER WARNING!<a href="#but-first---spoiler-warning" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+
+  <img src="/img/narnia/spoilies.gif"  class="center"  style="border-radius: 8px;"  />
+
+
+<p><strong>Do not read this writeup if you plan to solve Narnia yourself!</strong></p>
+<h1 id="narnia0----narnia1">Narnia0 &ndash;&gt; Narnia1<a href="#narnia0----narnia1" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>First, we log in:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh -p <span style="color:#ae81ff">2226</span> narnia0@narnia.labs.overthewire.org
+</code></pre></div><p>With the password <code>narnia0</code>.</p>
+<p>We know that the data for the levels is in <code>/narnia</code>, so:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls -la /narnia
+</code></pre></div>
+  <img src="/img/narnia/0.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Let&rsquo;s read <code>narnia0.c</code>!</p>
+
+  <img src="/img/narnia/1.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>From a quick glimpse, we can deduce that the program reads 24 bytes from stdin into a 20 byte buffer. Then, it tests if val equals 0xdeadbeef. If the test passes, we get a shell with elevated privileges (only if the binary has the suid bit set!). If we lived in a perfect (but boring) world in which buffer overflows didn&rsquo;t exist, the test will always fail because val is initialized as 0x41414141 at the beginning of main(). Let&rsquo;s test our hypothesis!</p>
+
+  <figure class="center" >
+    <img src="/img/narnia/2.png"   style="border-radius: 8px;"  />
+    
+      <figcaption class="left" >As expected.</figcaption>
+    
+  </figure>
+
+
+<p>What we can do is try to <strong>buffer overflow</strong>. Give <code>narnia0</code> 20 random bytes, and then <code>0xdeadbeef</code> to override var. Since we can&rsquo;t just input these bytes (non-ASCII), we&rsquo;ll write a quick Python script which will do this for us:</p>
+
+  <figure class="center" >
+    <img src="/img/narnia/3.png"   style="border-radius: 8px;"  />
+    
+      <figcaption class="left" >Damn</figcaption>
+    
+  </figure>
+
+
+<p>It&rsquo;s alive! Kinda. It seems like the buffer overflow worked, but the order of the bytes is all messed up. This is because of little endian vs. big endian:</p>
+
+  <img src="/img/narnia/endians.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Let&rsquo;s try turning the bytes order around:</p>
+
+  <figure class="center" >
+    <img src="/img/narnia/3.png"   style="border-radius: 8px;"  />
+    
+      <figcaption class="left" >It... worked?</figcaption>
+    
+  </figure>
+
+
+<p>The value is correct, we don&rsquo;t get the failure string, why don&rsquo;t we have an elevated shell?</p>
+<p>After some tinkering, I&rsquo;ve found out that if <code>/bin/sh</code> doesn&rsquo;t have an stdin, it just terminates. Therefore, we need to find a way to give <code>/bin/sh</code> an stdin. We can do this by creating a <a href="https://www.gnu.org/software/bash/manual/html_node/Command-Grouping.html">command group</a> which will run the exploit and then run <code>cat</code> without any parameters, so that it will wait for user input.</p>
+
+  <img src="/img/narnia/5.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Boom!</p>
+<p>Read the password file, and off we go to narnia1&ndash;&gt;narnia2.</p>
+<h1 id="narnia1----narnia2">Narnia1 &ndash;&gt; Narnia2<a href="#narnia1----narnia2" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Let&rsquo;s read <code>narnia1.c</code>:</p>
+
+  <figure class="center" >
+    <img src="/img/narnia/6.png"   style="border-radius: 8px;"  />
+    
+      <figcaption class="left" >Hey baby I hear the blues a-callin&#39;</figcaption>
+    
+  </figure>
+
+
+<p>From a quick glimpse, it seems that <code>narnia1</code> takes <strong>something</strong> from the EGG environment variable, and tries to execute it as a function.</p>
+
+  <img src="/img/narnia/7.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>We gave it computer gibberish, so of course it segfaulted.</p>
+<p>Let&rsquo;s read about <code>getenv</code>:</p>
+<blockquote>
+<p>The getenv() function searches the environment list to find the environment variable name, and returns a pointer to the corresponding value string.</p>
+</blockquote>
+<ul>
+<li><em>From the getenv(3) man page</em></li>
+</ul>
+<p>In our case, <code>getenv</code> returns a pointer to EGG. If we put some malicious <strong>shellcode</strong> in EGG, we can execute whatever we want. From a quick Google search we can find plenty of shellcodes. We need to make sure that our shellcode matches our architecture, so let&rsquo;s check what&rsquo;s the bitness of <code>narnia1</code>:</p>
+
+  <img src="/img/narnia/8.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>I&rsquo;ve found <a href="http://shell-storm.org/shellcode/files/shellcode-811.php">this x86 shellcode</a>, let&rsquo;s try it out.</p>
+
+  <figure class="center" >
+    <img src="/img/narnia/9.png"   style="border-radius: 8px;"  />
+    
+      <figcaption class="left" >Tossed salads and scrambled EGGs</figcaption>
+    
+  </figure>
+
+
+<p>Win.</p>
+<h1 id="narnia2----narnia3">Narnia2 &ndash;&gt; Narnia3<a href="#narnia2----narnia3" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+
+  <img src="/img/narnia/10.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>No execution directives anywhere 😞</p>
+<p>Seems like a basic <code>echo</code> ripoff; Get string argument and print it back to stdout. However, there&rsquo;s a catch: It uses <code>strcpy</code>.</p>
+<blockquote>
+<p>If the destination string of a strcpy() is not large enough, then anything might happen. Overflowing fixed-length string buffers is a favorite cracker technique for taking complete control of the machine. Any time a program reads or copies data into a buffer, the program first needs to check that there&rsquo;s enough space. This may be unnecessary if you can show that overflow is impossible, but be careful: programs can get changed over time, in ways that may make the impossible possible.</p>
+</blockquote>
+<ul>
+<li><em>From the strcpy(3) man page</em></li>
+</ul>
+<p>We know that the input string gets copied to <code>buf</code> which is 128 bytes long. Since we control the input, that means that we can overflow the buffer and change allocated memory.</p>
+<p>First of all, an overview of the stack:</p>
+
+  <img src="/img/narnia/stack.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>If we overflow <code>buf</code>, we can override the return address to whatever we want - in this case, shellcode which runs <code>/bin/sh</code>.</p>
+<p>First of all, let&rsquo;s see where we need to put our return address. Let&rsquo;s find out where the return address should be using <a href="https://wiremask.eu/tools/buffer-overflow-pattern-generator/">this tool</a>:</p>
+
+  <img src="/img/narnia/11.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>We can see that the program segfaulted at the address 0x41346541. Using the tool, we know that this is at the offset 132.</p>
+<p>In order to successfully jump to our shellcode, we need to know where our input will be copied to.</p>
+<p>Using GDB, we can break the program after the copy and examine the stack:</p>
+
+  <figure class="center" >
+    <img src="/img/narnia/12.png"   style="border-radius: 8px;"  />
+    
+      <figcaption class="left" >Finding the strcpy call and breaking after it</figcaption>
+    
+  </figure>
+
+
+
+  <img src="/img/narnia/13.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>So we can see that our input gets copied to <code>0xffffd618</code>.</p>
+<p>Using this information, we can craft malicious input like so:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo -ne <span style="color:#e6db74">&#34;\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\xb0\x0b\xcd\x80aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\x18\xd6\xff\xff&#34;</span> &gt; exploit.txt
+</code></pre></div><p>First, we have the shellcode. Then, we have bytes to trigger the buffer overflow. Then, at offset 132, we have the memory address to jump to in the stack.</p>
+<p>Now, this is a bit of a guessing game, because of various changes in the stack due to environment variables. After a bit of fiddling, debugging, and examining the memory, I got it to work using the following input:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo -ne <span style="color:#e6db74">&#34;\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\xb0\x0b\xcd\x80aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\xa8\xd5\xff\xff&#34;</span> &gt; exploit.txt
+</code></pre></div><p>However, there was a problem:</p>
+
+  <img src="/img/narnia/14.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>We&rsquo;re still narnia2! That&rsquo;s because GDB can&rsquo;t run suid programs as actual suids unless its running as root. <a href="https://unix.stackexchange.com/questions/15911/can-gdb-debug-suid-root-programs">More here</a>.</p>
+<p>Well, let&rsquo;s run it outside of GDB:</p>
+
+  <img src="/img/narnia/15.png"  class="center"  style="border-radius: 8px;"  />
+
+
+
+  <img src="/img/narnia/butwhy.gif"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>According to some <a href="https://reverseengineering.stackexchange.com/questions/2983/how-to-predict-address-space-layout-differences-between-real-and-gdb-controlled">very helpful StackOverflow posts</a>, GDB sets some environment variables which invalidate our hardcoded address. Let&rsquo;s try:</p>
+
+  <img src="/img/narnia/16.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>We can see that the address has changed to <code>0xffffd5c8</code>. Quickly changing our malicious input and&hellip;</p>
+
+  <img src="/img/narnia/17.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Hard one!</p>
+<h1 id="narnia3----narnia4">Narnia3 &ndash;&gt; Narnia4<a href="#narnia3----narnia4" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+
+  <img src="/img/narnia/18.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>According to the usage (and to the code), this program copies from an input file given as a parameter to <code>/dev/null</code>.</p>
+<p>There&rsquo;s an <code>strcpy</code> call, so at first I thought &ldquo;Easy, overflow the input to jump to the shellcode&rdquo;. However, on closer inspection, <strong>there are no return directives in the program</strong>. So, what can we do?</p>
+<p>We can use the <code>strcpy</code> call to override <code>ofile</code> to be whatever we want!</p>
+<p>However, we can&rsquo;t just copy <code>/etc/narnia_pass/narnia3</code>, because the filepath is shorter than 32 bytes, which is the length of <code>ifile</code>. However, we can create a symlink:</p>
+
+  <img src="/img/narnia/19.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Let&rsquo;s try our exploit! First, check if the symlink works:</p>
+
+  <img src="/img/narnia/20.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Nope. It&rsquo;s a permissions issue, the current directory is not world readable.</p>
+
+  <img src="/img/narnia/21.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Now let&rsquo;s try the overflow&hellip;</p>
+
+  <img src="/img/narnia/22.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Off by one error 😫</p>
+<p>After fixing the length, we can try writing to a real file. However, the buffer is only 16 bytes long, and our current directory is 19 bytes long. After finding a short enough available dir, let&rsquo;s try again:</p>
+
+  <img src="/img/narnia/23.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Why did the open check fail? Because of the open flag bits. The current open call only opens a file for reading and writing, and doesn&rsquo;t create it if it doesn&rsquo;t exist (for this the call needs O_CREAT).</p>
+
+  <img src="/img/narnia/24.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Interesting!</p>
+<p>The program managed to open our <code>ofile</code>, but failed to open the input. In fact, it&rsquo;s not the input we expected at all! This happened because there&rsquo;s no null terminator after the ending of our supposed <code>ifile</code>.</p>
+<p>Well, let&rsquo;s try to input a null terminator!</p>
+
+  <img src="/img/narnia/25.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>After <a href="https://stackoverflow.com/questions/35341379/writing-to-memory-beginning-by-null-bytes">some research</a>, I found out that bash just ignores null bytes when given as input. I also tried to do this with <code>os.execve</code>, but execve also ignores null bytes.</p>
+<p>After a good night&rsquo;s sleep, it dawned on me:</p>
+
+  <img src="/img/narnia/26.png"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>The answer was in front of my eyes all along 😅 <code>cat /tmp/daouj/o</code> and off to the next level!</p>
+<h1 id="narnia4----narnia5">Narnia4 &ndash;&gt; Narnia5<a href="#narnia4----narnia5" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Still working on it 🤘</p>
+<p>I&rsquo;ll continue updating this page!</p>
 
       </div></div>
   
@@ -162,16 +411,16 @@
     <footer class="footer">
   <div class="footer__inner">
     
-      <div class="copyright">
-        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+      <div class="copyright copyright--user">
+        <span>Barak Nehmad</span>
     
         <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
       </div>
   </div>
 </footer>
 
-<script src="/assets/main.js"></script>
-<script src="/assets/prism.js"></script>
+<script src="https://www.bnice.xyz/assets/main.js"></script>
+<script src="https://www.bnice.xyz/assets/prism.js"></script>
 
 
 

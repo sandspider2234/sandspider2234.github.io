@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Terminal</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Terminal</description>
+    <title>Tags on bnice</title>
+    <link>https://www.bnice.xyz/tags/</link>
+    <description>Recent content in Tags on bnice</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Barak Nehmad</copyright>
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.bnice.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>narnia</title>
+      <link>https://www.bnice.xyz/tags/narnia/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bnice.xyz/tags/narnia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unix</title>
+      <link>https://www.bnice.xyz/tags/unix/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bnice.xyz/tags/unix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>writeup</title>
+      <link>https://www.bnice.xyz/tags/writeup/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bnice.xyz/tags/writeup/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

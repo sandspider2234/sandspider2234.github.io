@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Terminal</title>
-    <link>/</link>
-    <description>Recent content on Terminal</description>
+    <title>bnice</title>
+    <link>https://www.bnice.xyz/</link>
+    <description>Recent content on bnice</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Barak Nehmad</copyright>
     <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.bnice.xyz/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Narnia Writeup</title>
-      <link>/posts/narnia-writeup/</link>
+      <link>https://www.bnice.xyz/posts/narnia-writeup/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/narnia-writeup/</guid>
-      <description>Narnia Writeup Very cool, wow</description>
+      <guid>https://www.bnice.xyz/posts/narnia-writeup/</guid>
+      <description>Intro So, I&amp;rsquo;ve decided to try doing the Narnia wargame, and document my attempts. Let&amp;rsquo;s get started!
+BUT FIRST - SPOILER WARNING! Do not read this writeup if you plan to solve Narnia yourself!
+Narnia0 &amp;ndash;&amp;gt; Narnia1 First, we log in:
+ssh -p 2226 narnia0@narnia.labs.overthewire.org With the password narnia0.
+We know that the data for the levels is in /narnia, so:
+ls -la /narnia  Let&amp;rsquo;s read narnia0.c!
+From a quick glimpse, we can deduce that the program reads 24 bytes from stdin into a 20 byte buffer.</description>
     </item>
     
   </channel>
