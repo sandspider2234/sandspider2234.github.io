@@ -18,13 +18,10 @@
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://www.bnice.xyz/posts/narnia-writeup/</guid>
-      <description>Intro So, I&amp;rsquo;ve decided to try doing the Narnia wargame, and document my attempts. Let&amp;rsquo;s get started!
+      <description>Intro BUT FIRST - SPOILER WARNING! Narnia0 &amp;ndash;&amp;gt; Narnia1 Narnia1 &amp;ndash;&amp;gt; Narnia2 Narnia2 &amp;ndash;&amp;gt; Narnia3 Narnia3 &amp;ndash;&amp;gt; Narnia4 Narnia4 &amp;ndash;&amp;gt; Narnia5  Intro So, I&amp;rsquo;ve decided to try doing the Narnia wargame, and document my attempts. Let&amp;rsquo;s get started!
 BUT FIRST - SPOILER WARNING! Do not read this writeup if you plan to solve Narnia yourself!
 Narnia0 &amp;ndash;&amp;gt; Narnia1 First, we log in:
-ssh -p 2226 narnia0@narnia.labs.overthewire.org With the password narnia0.
-We know that the data for the levels is in /narnia, so:
-ls -la /narnia  Let&amp;rsquo;s read narnia0.c!
-From a quick glimpse, we can deduce that the program reads 24 bytes from stdin into a 20 byte buffer.</description>
+ssh -p 2226 narnia0@narnia.labs.overthewire.org With the password narnia0.</description>
     </item>
     
   </channel>

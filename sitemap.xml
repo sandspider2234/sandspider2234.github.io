@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.bnice.xyz/tags/github/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bnice.xyz/tags/hugo/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bnice.xyz/posts/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bnice.xyz/tags/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bnice.xyz/posts/why-i-moved-to-github-pages/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.bnice.xyz/about/</loc>
     <lastmod>2020-04-08T19:44:09+03:00</lastmod>
   </url>
@@ -19,16 +44,6 @@
   
   <url>
     <loc>https://www.bnice.xyz/posts/narnia-writeup/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/posts/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/tags/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   

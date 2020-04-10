@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on bnice</title>
-    <link>https://www.bnice.xyz/posts/</link>
-    <description>Recent content in Posts on bnice</description>
+    <title>hugo on bnice</title>
+    <link>https://www.bnice.xyz/tags/hugo/</link>
+    <description>Recent content in hugo on bnice</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Barak Nehmad</copyright>
     <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.bnice.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.bnice.xyz/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,18 +20,6 @@
       <guid>https://www.bnice.xyz/posts/why-i-moved-to-github-pages/</guid>
       <description>In the beginning&amp;hellip; A few weeks before I had this website, I decided to open a blog. I Googled &amp;ldquo;how to create a blog&amp;rdquo;, and WordPress came up as a clear winner.
 I created an account, and got started pretty easy. I created a post, and got thrown to the block editor. It&amp;rsquo;s a WYSIWYG editor, which uses &amp;ldquo;blocks&amp;rdquo; as a way to define data and its properties. For example, one block can be a paragraph, the next one is a quote, and the next is an image.</description>
-    </item>
-    
-    <item>
-      <title>Narnia Writeup</title>
-      <link>https://www.bnice.xyz/posts/narnia-writeup/</link>
-      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.bnice.xyz/posts/narnia-writeup/</guid>
-      <description>Intro BUT FIRST - SPOILER WARNING! Narnia0 &amp;ndash;&amp;gt; Narnia1 Narnia1 &amp;ndash;&amp;gt; Narnia2 Narnia2 &amp;ndash;&amp;gt; Narnia3 Narnia3 &amp;ndash;&amp;gt; Narnia4 Narnia4 &amp;ndash;&amp;gt; Narnia5  Intro So, I&amp;rsquo;ve decided to try doing the Narnia wargame, and document my attempts. Let&amp;rsquo;s get started!
-BUT FIRST - SPOILER WARNING! Do not read this writeup if you plan to solve Narnia yourself!
-Narnia0 &amp;ndash;&amp;gt; Narnia1 First, we log in:
-ssh -p 2226 narnia0@narnia.labs.overthewire.org With the password narnia0.</description>
     </item>
     
   </channel>
