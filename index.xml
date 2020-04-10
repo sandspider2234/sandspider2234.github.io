@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Barak Nehmad</copyright>
-    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2020 19:44:09 +0300</lastBuildDate>
     
 	<atom:link href="https://www.bnice.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://www.bnice.xyz/about/</link>
+      <pubDate>Wed, 08 Apr 2020 19:44:09 +0300</pubDate>
+      
+      <guid>https://www.bnice.xyz/about/</guid>
+      <description>Hi! I&amp;rsquo;m Barak Nehmad.
+Who? I&amp;rsquo;m an independent InfoSec enthusaist.
+Where?  Here&amp;rsquo;s my Twitter (DMs always open) Over there on the left side is my GitHub If you look over to the right it&amp;rsquo;s my e-mail  Why? I wanted to document my InfoSec and wargames escapades, for a few reasons:
+ Learning - By documenting what I&amp;rsquo;m doing, I can rubber duck debug myself, and get feedback from whoever&amp;rsquo;s reading my posts.</description>
+    </item>
     
     <item>
       <title>Narnia Writeup</title>
