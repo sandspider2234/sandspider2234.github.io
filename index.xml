@@ -2,48 +2,343 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bnice</title>
-    <link>https://www.bnice.xyz/</link>
+    <link>https://bnice.dev/</link>
     <description>Recent content on bnice</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>Barak Nehmad</copyright>
-    <lastBuildDate>Wed, 08 Apr 2020 19:44:09 +0300</lastBuildDate>
-    
-	<atom:link href="https://www.bnice.xyz/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://bnice.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why I moved from WordPress to GitHub Pages</title>
-      <link>https://www.bnice.xyz/posts/why-i-moved-to-github-pages/</link>
+      <link>https://bnice.dev/posts/why-i-moved-to-github-pages/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bnice.xyz/posts/why-i-moved-to-github-pages/</guid>
+      <guid>https://bnice.dev/posts/why-i-moved-to-github-pages/</guid>
       <description>In the beginning&amp;hellip; A few weeks before I had this website, I decided to open a blog. I Googled &amp;ldquo;how to create a blog&amp;rdquo;, and WordPress came up as a clear winner.
 I created an account, and got started pretty easy. I created a post, and got thrown to the block editor. It&amp;rsquo;s a WYSIWYG editor, which uses &amp;ldquo;blocks&amp;rdquo; as a way to define data and its properties. For example, one block can be a paragraph, the next one is a quote, and the next is an image.</description>
+      <content>&lt;h1 id=&#34;in-the-beginning&#34;&gt;In the beginning&amp;hellip;&lt;/h1&gt;
+&lt;p&gt;A few weeks before I had this website, I decided to open a blog. I Googled &lt;em&gt;&amp;ldquo;how to create a blog&amp;rdquo;&lt;/em&gt;, and WordPress came up as a clear winner.&lt;/p&gt;
+&lt;p&gt;I created an account, and got started pretty easy. I created a post, and got thrown to the block editor. It&amp;rsquo;s a WYSIWYG editor, which uses &amp;ldquo;blocks&amp;rdquo; as a way to define data and its properties. For example, one block can be a &lt;em&gt;paragraph&lt;/em&gt;, the next one is a &lt;em&gt;quote&lt;/em&gt;, and the next is an &lt;em&gt;image&lt;/em&gt;. Each of these blocks may have their own unique properties and sets of options.&lt;/p&gt;
+&lt;p&gt;I started writing my &lt;a href=&#34;https://bnice.dev/posts/narnia-writeup/&#34;&gt;Narnia writeup&lt;/a&gt;, but it felt&amp;hellip; Unnatural. The block editor was cumbersome, and I didn&amp;rsquo;t feel in control of the options and parameters.&lt;/p&gt;
+&lt;p&gt;However, I said to myself &amp;ldquo;the goal of blogging is achieved&amp;rdquo;, and let it go. &lt;em&gt;Also the default theme there is pretty cool&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;After some weird publishing options, I finally published it to the world with this tweet:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I wrote a writeup of Narnia0 to Narnia4. I would love some feedback!&lt;br&gt;&lt;br&gt;Of course, a SPOILER WARNING for anyone who wants to try it!&lt;a href=&#34;https://t.co/TreYNWfM9d&#34;&gt;https://t.co/TreYNWfM9d&lt;/a&gt; &lt;a href=&#34;https://t.co/AHvLAgx3Nk&#34;&gt;pic.twitter.com/AHvLAgx3Nk&lt;/a&gt;&lt;/p&gt;&amp;mdash; Barak Nehmad ⚡ (@SandSpider2234) &lt;a href=&#34;https://twitter.com/SandSpider2234/status/1243956194789732353?ref_src=twsrc%5Etfw&#34;&gt;March 28, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h1 id=&#34;let-there-be-light&#34;&gt;Let there be light!&lt;/h1&gt;
+&lt;p&gt;I then showed it to my brother, who said &amp;ldquo;cool and all, but why not on GitHub Pages?&amp;rdquo; and I realised that I didn&amp;rsquo;t even consider it.&lt;/p&gt;
+&lt;p&gt;After some consideration, here are the pros of GHP that helped me take the plunge:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I can edit in any editor (currently VSCode), not just the WordPress online one.&lt;/li&gt;
+&lt;li&gt;I can write in Markdown, which is something I wanted to learn for a long time.&lt;/li&gt;
+&lt;li&gt;I am more in control of &lt;strong&gt;my&lt;/strong&gt; content; If it&amp;rsquo;s in the public repo, it&amp;rsquo;s published. If it&amp;rsquo;s not, it&amp;rsquo;s not. Simple as that. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Together, we initialized the required repos, bought a domain, and set up &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; as a static site generator, which perfectly fits my needs (input text and shortcodes, output pretty text and embeds). You can read all about the building process &lt;a href=&#34;https://www.mrnice.dev/posts/how-to-build-this-blog/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The migration process from WordPress was quite a pain, of course because of the online editor. WordPress offers an export function, but it outputs ugly HTML (which I&amp;rsquo;m trying to avoid), so I had to manually copy each paragraph and download each piece of media again. Thankfully, I migrated after only one post, so it could have been a lot worse.&lt;/p&gt;
+&lt;h1 id=&#34;and-it-was-good&#34;&gt;And it was good&lt;/h1&gt;
+&lt;p&gt;Now, I feel that it&amp;rsquo;s much less of a hassle to write and document everything that I do. Win! ✒️&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Of course, I&amp;rsquo;m not completely in control of my data. It&amp;rsquo;s hosted on GitHub servers, and if the data center goes up in flames so does my website. If I wanted absolute control over my website, I would have hosted it out of my own home server using an Apache stack. However, security/privacy and ease of use are usually mutually exclusive, and this time I decided to go with the ease of use route.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://www.bnice.xyz/about/</link>
+      <link>https://bnice.dev/about/</link>
       <pubDate>Wed, 08 Apr 2020 19:44:09 +0300</pubDate>
       
-      <guid>https://www.bnice.xyz/about/</guid>
+      <guid>https://bnice.dev/about/</guid>
       <description>Hi! I&amp;rsquo;m Barak Nehmad.
 Who? I&amp;rsquo;m an independent InfoSec enthusaist.
-Where?  Here&amp;rsquo;s my Twitter (DMs always open) Over there on the left side is my GitHub If you look over to the right it&amp;rsquo;s my e-mail  Why? I wanted to document my InfoSec and wargames escapades, for a few reasons:
- Learning - By documenting what I&amp;rsquo;m doing, I can rubber duck debug myself, and get feedback from whoever&amp;rsquo;s reading my posts.</description>
+Where? Here&amp;rsquo;s my Twitter (DMs always open) Over there on the left side is my GitHub If you look over to the right it&amp;rsquo;s my e-mail Why? I wanted to document my InfoSec and wargames escapades, for a few reasons:
+Learning - By documenting what I&amp;rsquo;m doing, I can rubber duck debug myself, and get feedback from whoever&amp;rsquo;s reading my posts.</description>
+      <content>&lt;h1 id=&#34;hi&#34;&gt;Hi!&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m Barak Nehmad.&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/about.jpg&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;h1 id=&#34;who&#34;&gt;Who?&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m an independent InfoSec enthusaist.&lt;/p&gt;
+&lt;h1 id=&#34;where&#34;&gt;Where?&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/SandSpider2234&#34;&gt;Here&amp;rsquo;s my Twitter&lt;/a&gt; (DMs always open)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sandspider2234&#34;&gt;Over there on the left side is my GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;mailto:bnehmad@gmail.com&#34;&gt;If you look over to the right it&amp;rsquo;s my e-mail&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;why&#34;&gt;Why?&lt;/h1&gt;
+&lt;p&gt;I wanted to document my InfoSec and wargames escapades, for a few reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Learning - By documenting what I&amp;rsquo;m doing, I can rubber duck debug myself, and get feedback from whoever&amp;rsquo;s reading my posts. (That&amp;rsquo;s you!)&lt;/li&gt;
+&lt;li&gt;Helping others - If anything in this blog helped anyone else, no matter how, then it has done its job 😊&lt;/li&gt;
+&lt;li&gt;Fun - If I get to have fun while doing so, which I do, then why not? 🤘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;how&#34;&gt;How?&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m hosting this site on &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt;, and it&amp;rsquo;s powered by the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator.&lt;/p&gt;
+</content>
     </item>
     
     <item>
       <title>Narnia Writeup</title>
-      <link>https://www.bnice.xyz/posts/narnia-writeup/</link>
+      <link>https://bnice.dev/posts/narnia-writeup/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bnice.xyz/posts/narnia-writeup/</guid>
-      <description>Intro BUT FIRST - SPOILER WARNING! Narnia0 &amp;ndash;&amp;gt; Narnia1 Narnia1 &amp;ndash;&amp;gt; Narnia2 Narnia2 &amp;ndash;&amp;gt; Narnia3 Narnia3 &amp;ndash;&amp;gt; Narnia4 Narnia4 &amp;ndash;&amp;gt; Narnia5  Intro So, I&amp;rsquo;ve decided to try doing the Narnia wargame, and document my attempts. Let&amp;rsquo;s get started!
+      <guid>https://bnice.dev/posts/narnia-writeup/</guid>
+      <description>Intro BUT FIRST - SPOILER WARNING! Narnia0 &amp;ndash;&amp;gt; Narnia1 Narnia1 &amp;ndash;&amp;gt; Narnia2 Narnia2 &amp;ndash;&amp;gt; Narnia3 Narnia3 &amp;ndash;&amp;gt; Narnia4 Narnia4 &amp;ndash;&amp;gt; Narnia5 Intro So, I&amp;rsquo;ve decided to try doing the Narnia wargame, and document my attempts. Let&amp;rsquo;s get started!
 BUT FIRST - SPOILER WARNING! Do not read this writeup if you plan to solve Narnia yourself!
 Narnia0 &amp;ndash;&amp;gt; Narnia1 First, we log in:
 ssh -p 2226 narnia0@narnia.labs.overthewire.org With the password narnia0.</description>
+      <content>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#intro&#34;&gt;Intro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#but-first---spoiler-warning&#34;&gt;BUT FIRST - SPOILER WARNING!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#narnia0----narnia1&#34;&gt;Narnia0 &amp;ndash;&amp;gt; Narnia1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#narnia1----narnia2&#34;&gt;Narnia1 &amp;ndash;&amp;gt; Narnia2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#narnia2----narnia3&#34;&gt;Narnia2 &amp;ndash;&amp;gt; Narnia3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#narnia3----narnia4&#34;&gt;Narnia3 &amp;ndash;&amp;gt; Narnia4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#narnia4----narnia5&#34;&gt;Narnia4 &amp;ndash;&amp;gt; Narnia5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;
+&lt;p&gt;So, I&amp;rsquo;ve decided to try doing the &lt;a href=&#34;https://overthewire.org/wargames/narnia/&#34;&gt;Narnia wargame&lt;/a&gt;, and document my attempts. Let&amp;rsquo;s get started!&lt;/p&gt;
+&lt;h1 id=&#34;but-first---spoiler-warning&#34;&gt;BUT FIRST - SPOILER WARNING!&lt;/h1&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/spoilies.gif&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Do not read this writeup if you plan to solve Narnia yourself!&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;narnia0----narnia1&#34;&gt;Narnia0 &amp;ndash;&amp;gt; Narnia1&lt;/h1&gt;
+&lt;p&gt;First, we log in:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh -p &lt;span style=&#34;color:#ae81ff&#34;&gt;2226&lt;/span&gt; narnia0@narnia.labs.overthewire.org
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;With the password &lt;code&gt;narnia0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We know that the data for the levels is in &lt;code&gt;/narnia&lt;/code&gt;, so:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ls -la /narnia
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;img src=&#34;https://bnice.dev/img/narnia/0.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;Let&amp;rsquo;s read &lt;code&gt;narnia0.c&lt;/code&gt;!&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/1.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;From a quick glimpse, we can deduce that the program reads 24 bytes from stdin into a 20 byte buffer. Then, it tests if val equals 0xdeadbeef. If the test passes, we get a shell with elevated privileges (only if the binary has the suid bit set!). If we lived in a perfect (but boring) world in which buffer overflows didn&amp;rsquo;t exist, the test will always fail because val is initialized as 0x41414141 at the beginning of main(). Let&amp;rsquo;s test our hypothesis!&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://bnice.dev/img/narnia/2.png&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;left&#34; &gt;As expected.&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;What we can do is try to &lt;strong&gt;buffer overflow&lt;/strong&gt;. Give &lt;code&gt;narnia0&lt;/code&gt; 20 random bytes, and then &lt;code&gt;0xdeadbeef&lt;/code&gt; to override var. Since we can&amp;rsquo;t just input these bytes (non-ASCII), we&amp;rsquo;ll write a quick Python script which will do this for us:&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://bnice.dev/img/narnia/3.png&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;left&#34; &gt;Damn&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;It&amp;rsquo;s alive! Kinda. It seems like the buffer overflow worked, but the order of the bytes is all messed up. This is because of little endian vs. big endian:&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/endians.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;Let&amp;rsquo;s try turning the bytes order around:&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://bnice.dev/img/narnia/3.png&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;left&#34; &gt;It... worked?&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;The value is correct, we don&amp;rsquo;t get the failure string, why don&amp;rsquo;t we have an elevated shell?&lt;/p&gt;
+&lt;p&gt;After some tinkering, I&amp;rsquo;ve found out that if &lt;code&gt;/bin/sh&lt;/code&gt; doesn&amp;rsquo;t have an stdin, it just terminates. Therefore, we need to find a way to give &lt;code&gt;/bin/sh&lt;/code&gt; an stdin. We can do this by creating a &lt;a href=&#34;https://www.gnu.org/software/bash/manual/html_node/Command-Grouping.html&#34;&gt;command group&lt;/a&gt; which will run the exploit and then run &lt;code&gt;cat&lt;/code&gt; without any parameters, so that it will wait for user input.&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/5.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;Boom!&lt;/p&gt;
+&lt;p&gt;Read the password file, and off we go to narnia1&amp;ndash;&amp;gt;narnia2.&lt;/p&gt;
+&lt;h1 id=&#34;narnia1----narnia2&#34;&gt;Narnia1 &amp;ndash;&amp;gt; Narnia2&lt;/h1&gt;
+&lt;p&gt;Let&amp;rsquo;s read &lt;code&gt;narnia1.c&lt;/code&gt;:&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://bnice.dev/img/narnia/6.png&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;left&#34; &gt;Hey baby I hear the blues a-callin&#39;&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;From a quick glimpse, it seems that &lt;code&gt;narnia1&lt;/code&gt; takes &lt;strong&gt;something&lt;/strong&gt; from the EGG environment variable, and tries to execute it as a function.&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/7.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;We gave it computer gibberish, so of course it segfaulted.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s read about &lt;code&gt;getenv&lt;/code&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The getenv() function searches the environment list to find the environment variable name, and returns a pointer to the corresponding value string.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;From the getenv(3) man page&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In our case, &lt;code&gt;getenv&lt;/code&gt; returns a pointer to EGG. If we put some malicious &lt;strong&gt;shellcode&lt;/strong&gt; in EGG, we can execute whatever we want. From a quick Google search we can find plenty of shellcodes. We need to make sure that our shellcode matches our architecture, so let&amp;rsquo;s check what&amp;rsquo;s the bitness of &lt;code&gt;narnia1&lt;/code&gt;:&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/8.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;I&amp;rsquo;ve found &lt;a href=&#34;http://shell-storm.org/shellcode/files/shellcode-811.php&#34;&gt;this x86 shellcode&lt;/a&gt;, let&amp;rsquo;s try it out.&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://bnice.dev/img/narnia/9.png&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;left&#34; &gt;Tossed salads and scrambled EGGs&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;Win.&lt;/p&gt;
+&lt;h1 id=&#34;narnia2----narnia3&#34;&gt;Narnia2 &amp;ndash;&amp;gt; Narnia3&lt;/h1&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/10.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;No execution directives anywhere 😞&lt;/p&gt;
+&lt;p&gt;Seems like a basic &lt;code&gt;echo&lt;/code&gt; ripoff; Get string argument and print it back to stdout. However, there&amp;rsquo;s a catch: It uses &lt;code&gt;strcpy&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the destination string of a strcpy() is not large enough, then anything might happen. Overflowing fixed-length string buffers is a favorite cracker technique for taking complete control of the machine. Any time a program reads or copies data into a buffer, the program first needs to check that there&amp;rsquo;s enough space. This may be unnecessary if you can show that overflow is impossible, but be careful: programs can get changed over time, in ways that may make the impossible possible.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;From the strcpy(3) man page&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We know that the input string gets copied to &lt;code&gt;buf&lt;/code&gt; which is 128 bytes long. Since we control the input, that means that we can overflow the buffer and change allocated memory.&lt;/p&gt;
+&lt;p&gt;First of all, an overview of the stack:&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/stack.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;If we overflow &lt;code&gt;buf&lt;/code&gt;, we can override the return address to whatever we want - in this case, shellcode which runs &lt;code&gt;/bin/sh&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;First of all, let&amp;rsquo;s see where we need to put our return address. Let&amp;rsquo;s find out where the return address should be using &lt;a href=&#34;https://wiremask.eu/tools/buffer-overflow-pattern-generator/&#34;&gt;this tool&lt;/a&gt;:&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/11.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;We can see that the program segfaulted at the address 0x41346541. Using the tool, we know that this is at the offset 132.&lt;/p&gt;
+&lt;p&gt;In order to successfully jump to our shellcode, we need to know where our input will be copied to.&lt;/p&gt;
+&lt;p&gt;Using GDB, we can break the program after the copy and examine the stack:&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://bnice.dev/img/narnia/12.png&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;left&#34; &gt;Finding the strcpy call and breaking after it&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/13.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;So we can see that our input gets copied to &lt;code&gt;0xffffd618&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Using this information, we can craft malicious input like so:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo -ne &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\xb0\x0b\xcd\x80aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\x18\xd6\xff\xff&amp;#34;&lt;/span&gt; &amp;gt; exploit.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;First, we have the shellcode. Then, we have bytes to trigger the buffer overflow. Then, at offset 132, we have the memory address to jump to in the stack.&lt;/p&gt;
+&lt;p&gt;Now, this is a bit of a guessing game, because of various changes in the stack due to environment variables. After a bit of fiddling, debugging, and examining the memory, I got it to work using the following input:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo -ne &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\xb0\x0b\xcd\x80aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\xa8\xd5\xff\xff&amp;#34;&lt;/span&gt; &amp;gt; exploit.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;However, there was a problem:&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/14.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;We&amp;rsquo;re still narnia2! That&amp;rsquo;s because GDB can&amp;rsquo;t run suid programs as actual suids unless its running as root. &lt;a href=&#34;https://unix.stackexchange.com/questions/15911/can-gdb-debug-suid-root-programs&#34;&gt;More here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Well, let&amp;rsquo;s run it outside of GDB:&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/15.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/butwhy.gif&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;According to some &lt;a href=&#34;https://reverseengineering.stackexchange.com/questions/2983/how-to-predict-address-space-layout-differences-between-real-and-gdb-controlled&#34;&gt;very helpful StackOverflow posts&lt;/a&gt;, GDB sets some environment variables which invalidate our hardcoded address. Let&amp;rsquo;s try:&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/16.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;We can see that the address has changed to &lt;code&gt;0xffffd5c8&lt;/code&gt;. Quickly changing our malicious input and&amp;hellip;&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/17.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;Hard one!&lt;/p&gt;
+&lt;h1 id=&#34;narnia3----narnia4&#34;&gt;Narnia3 &amp;ndash;&amp;gt; Narnia4&lt;/h1&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/18.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;According to the usage (and to the code), this program copies from an input file given as a parameter to &lt;code&gt;/dev/null&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s an &lt;code&gt;strcpy&lt;/code&gt; call, so at first I thought &amp;ldquo;Easy, overflow the input to jump to the shellcode&amp;rdquo;. However, on closer inspection, &lt;strong&gt;there are no return directives in the program&lt;/strong&gt;. So, what can we do?&lt;/p&gt;
+&lt;p&gt;We can use the &lt;code&gt;strcpy&lt;/code&gt; call to override &lt;code&gt;ofile&lt;/code&gt; to be whatever we want!&lt;/p&gt;
+&lt;p&gt;However, we can&amp;rsquo;t just copy &lt;code&gt;/etc/narnia_pass/narnia3&lt;/code&gt;, because the filepath is shorter than 32 bytes, which is the length of &lt;code&gt;ifile&lt;/code&gt;. However, we can create a symlink:&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/19.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;Let&amp;rsquo;s try our exploit! First, check if the symlink works:&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/20.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;Nope. It&amp;rsquo;s a permissions issue, the current directory is not world readable.&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/21.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;Now let&amp;rsquo;s try the overflow&amp;hellip;&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/22.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;Off by one error 😫&lt;/p&gt;
+&lt;p&gt;After fixing the length, we can try writing to a real file. However, the buffer is only 16 bytes long, and our current directory is 19 bytes long. After finding a short enough available dir, let&amp;rsquo;s try again:&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/23.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;Why did the open check fail? Because of the open flag bits. The current open call only opens a file for reading and writing, and doesn&amp;rsquo;t create it if it doesn&amp;rsquo;t exist (for this the call needs O_CREAT).&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/24.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;Interesting!&lt;/p&gt;
+&lt;p&gt;The program managed to open our &lt;code&gt;ofile&lt;/code&gt;, but failed to open the input. In fact, it&amp;rsquo;s not the input we expected at all! This happened because there&amp;rsquo;s no null terminator after the ending of our supposed &lt;code&gt;ifile&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Well, let&amp;rsquo;s try to input a null terminator!&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/25.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;After &lt;a href=&#34;https://stackoverflow.com/questions/35341379/writing-to-memory-beginning-by-null-bytes&#34;&gt;some research&lt;/a&gt;, I found out that bash just ignores null bytes when given as input. I also tried to do this with &lt;code&gt;os.execve&lt;/code&gt;, but execve also ignores null bytes.&lt;/p&gt;
+&lt;p&gt;After a good night&amp;rsquo;s sleep, it dawned on me:&lt;/p&gt;
+
+&lt;img src=&#34;https://bnice.dev/img/narnia/26.png&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
+&lt;p&gt;The answer was in front of my eyes all along 😅 &lt;code&gt;cat /tmp/daouj/o&lt;/code&gt; and off to the next level!&lt;/p&gt;
+&lt;h1 id=&#34;narnia4----narnia5&#34;&gt;Narnia4 &amp;ndash;&amp;gt; Narnia5&lt;/h1&gt;
+&lt;p&gt;Still working on it 🤘&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll continue updating this page!&lt;/p&gt;
+</content>
     </item>
     
   </channel>

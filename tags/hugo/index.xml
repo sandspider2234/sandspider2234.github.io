@@ -2,24 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on bnice</title>
-    <link>https://www.bnice.xyz/tags/hugo/</link>
+    <link>https://bnice.dev/tags/hugo/</link>
     <description>Recent content in hugo on bnice</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>Barak Nehmad</copyright>
-    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.bnice.xyz/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://bnice.dev/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why I moved from WordPress to GitHub Pages</title>
-      <link>https://www.bnice.xyz/posts/why-i-moved-to-github-pages/</link>
+      <link>https://bnice.dev/posts/why-i-moved-to-github-pages/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bnice.xyz/posts/why-i-moved-to-github-pages/</guid>
+      <guid>https://bnice.dev/posts/why-i-moved-to-github-pages/</guid>
       <description>In the beginning&amp;hellip; A few weeks before I had this website, I decided to open a blog. I Googled &amp;ldquo;how to create a blog&amp;rdquo;, and WordPress came up as a clear winner.
 I created an account, and got started pretty easy. I created a post, and got thrown to the block editor. It&amp;rsquo;s a WYSIWYG editor, which uses &amp;ldquo;blocks&amp;rdquo; as a way to define data and its properties. For example, one block can be a paragraph, the next one is a quote, and the next is an image.</description>
+      <content>&lt;h1 id=&#34;in-the-beginning&#34;&gt;In the beginning&amp;hellip;&lt;/h1&gt;
+&lt;p&gt;A few weeks before I had this website, I decided to open a blog. I Googled &lt;em&gt;&amp;ldquo;how to create a blog&amp;rdquo;&lt;/em&gt;, and WordPress came up as a clear winner.&lt;/p&gt;
+&lt;p&gt;I created an account, and got started pretty easy. I created a post, and got thrown to the block editor. It&amp;rsquo;s a WYSIWYG editor, which uses &amp;ldquo;blocks&amp;rdquo; as a way to define data and its properties. For example, one block can be a &lt;em&gt;paragraph&lt;/em&gt;, the next one is a &lt;em&gt;quote&lt;/em&gt;, and the next is an &lt;em&gt;image&lt;/em&gt;. Each of these blocks may have their own unique properties and sets of options.&lt;/p&gt;
+&lt;p&gt;I started writing my &lt;a href=&#34;https://bnice.dev/posts/narnia-writeup/&#34;&gt;Narnia writeup&lt;/a&gt;, but it felt&amp;hellip; Unnatural. The block editor was cumbersome, and I didn&amp;rsquo;t feel in control of the options and parameters.&lt;/p&gt;
+&lt;p&gt;However, I said to myself &amp;ldquo;the goal of blogging is achieved&amp;rdquo;, and let it go. &lt;em&gt;Also the default theme there is pretty cool&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;After some weird publishing options, I finally published it to the world with this tweet:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I wrote a writeup of Narnia0 to Narnia4. I would love some feedback!&lt;br&gt;&lt;br&gt;Of course, a SPOILER WARNING for anyone who wants to try it!&lt;a href=&#34;https://t.co/TreYNWfM9d&#34;&gt;https://t.co/TreYNWfM9d&lt;/a&gt; &lt;a href=&#34;https://t.co/AHvLAgx3Nk&#34;&gt;pic.twitter.com/AHvLAgx3Nk&lt;/a&gt;&lt;/p&gt;&amp;mdash; Barak Nehmad ⚡ (@SandSpider2234) &lt;a href=&#34;https://twitter.com/SandSpider2234/status/1243956194789732353?ref_src=twsrc%5Etfw&#34;&gt;March 28, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h1 id=&#34;let-there-be-light&#34;&gt;Let there be light!&lt;/h1&gt;
+&lt;p&gt;I then showed it to my brother, who said &amp;ldquo;cool and all, but why not on GitHub Pages?&amp;rdquo; and I realised that I didn&amp;rsquo;t even consider it.&lt;/p&gt;
+&lt;p&gt;After some consideration, here are the pros of GHP that helped me take the plunge:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I can edit in any editor (currently VSCode), not just the WordPress online one.&lt;/li&gt;
+&lt;li&gt;I can write in Markdown, which is something I wanted to learn for a long time.&lt;/li&gt;
+&lt;li&gt;I am more in control of &lt;strong&gt;my&lt;/strong&gt; content; If it&amp;rsquo;s in the public repo, it&amp;rsquo;s published. If it&amp;rsquo;s not, it&amp;rsquo;s not. Simple as that. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Together, we initialized the required repos, bought a domain, and set up &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; as a static site generator, which perfectly fits my needs (input text and shortcodes, output pretty text and embeds). You can read all about the building process &lt;a href=&#34;https://www.mrnice.dev/posts/how-to-build-this-blog/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The migration process from WordPress was quite a pain, of course because of the online editor. WordPress offers an export function, but it outputs ugly HTML (which I&amp;rsquo;m trying to avoid), so I had to manually copy each paragraph and download each piece of media again. Thankfully, I migrated after only one post, so it could have been a lot worse.&lt;/p&gt;
+&lt;h1 id=&#34;and-it-was-good&#34;&gt;And it was good&lt;/h1&gt;
+&lt;p&gt;Now, I feel that it&amp;rsquo;s much less of a hassle to write and document everything that I do. Win! ✒️&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Of course, I&amp;rsquo;m not completely in control of my data. It&amp;rsquo;s hosted on GitHub servers, and if the data center goes up in flames so does my website. If I wanted absolute control over my website, I would have hosted it out of my own home server using an Apache stack. However, security/privacy and ease of use are usually mutually exclusive, and this time I decided to go with the ease of use route.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
     </item>
     
   </channel>

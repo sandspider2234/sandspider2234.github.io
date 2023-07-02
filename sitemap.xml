@@ -1,64 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://www.bnice.xyz/tags/github/</loc>
+    <loc>https://bnice.dev/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/tags/hugo/</loc>
+  </url><url>
+    <loc>https://bnice.dev/tags/github/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/posts/</loc>
+  </url><url>
+    <loc>https://bnice.dev/tags/hugo/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/tags/</loc>
+  </url><url>
+    <loc>https://bnice.dev/posts/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/posts/why-i-moved-to-github-pages/</loc>
+  </url><url>
+    <loc>https://bnice.dev/tags/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/about/</loc>
+  </url><url>
+    <loc>https://bnice.dev/posts/why-i-moved-to-github-pages/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bnice.dev/about/</loc>
     <lastmod>2020-04-08T19:44:09+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/</loc>
-    <lastmod>2020-04-08T19:44:09+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/tags/narnia/</loc>
+  </url><url>
+    <loc>https://bnice.dev/tags/narnia/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/posts/narnia-writeup/</loc>
+  </url><url>
+    <loc>https://bnice.dev/posts/narnia-writeup/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/tags/unix/</loc>
+  </url><url>
+    <loc>https://bnice.dev/tags/unix/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/tags/writeup/</loc>
+  </url><url>
+    <loc>https://bnice.dev/tags/writeup/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bnice.dev/categories/</loc>
   </url>
-  
-  <url>
-    <loc>https://www.bnice.xyz/categories/</loc>
-  </url>
-  
 </urlset>
